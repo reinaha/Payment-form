@@ -1,0 +1,36 @@
+@mixin flex-effect{
+	display:flex;
+	justify-content:center;
+	align-content:center;
+}
+
+@mixin card-style{
+	border: thin red solid;
+	width: 50%;
+	height: 7em;
+	border-radius: 0.5em;
+}
+
+
+.wrap { 
+	border: thin red solid;
+	width: 35vw;
+	margin: auto;
+
+	.top-box{
+		border: thin blue solid;
+
+		.menu{
+			border: thin red solid;
+			@include flex-effect;
+			justify-content: space-between;
+		}
+
+		.card-slide {
+			@include card-style;
+		}
+	}
+
+}
+
+
